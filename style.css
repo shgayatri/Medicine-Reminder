@@ -1,0 +1,136 @@
+/* ===== GLOBAL ===== */
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    min-height: 100vh;
+    color: white;
+}
+
+/* ===== HEADER ===== */
+.header {
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.header h1 {
+    font-size: 36px;
+    margin-bottom: 5px;
+}
+
+/* ===== CARD FORM ===== */
+.card {
+    width: 90%;
+    max-width: 450px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+.card input,
+.card textarea {
+    width: 100%;
+    margin: 12px 0;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.add-btn {
+    width: 100%;
+    padding: 12px;
+    background: #00ffcc;
+    color: black;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.add-btn:hover {
+    background: #00e3b8;
+}
+
+/* ===== REMINDER LIST ===== */
+.list-title {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.list-container {
+    width: 90%;
+    max-width: 450px;
+    margin: auto;
+}
+
+.reminder-box {
+    background: rgba(255,255,255,0.2);
+    margin-top: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border-left: 6px solid #00ffcc;
+}
+
+.delete-btn {
+    margin-top: 10px;
+    padding: 7px 15px;
+    background: red;
+    border-radius: 6px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background: darkred;
+}
+
+/* ===== POPUP ===== */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(5px);
+    background: rgba(0,0,0,0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    width: 80%;
+    max-width: 350px;
+    background: white;
+    color: black;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    animation: scaleIn 0.3s ease-in-out;
+}
+
+@keyframes scaleIn {
+    from { transform: scale(0.7); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+.ok-btn {
+    margin-top: 15px;
+    padding: 10px 25px;
+    background: #2575fc;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+}
+
+.ok-btn:hover {
+    background: #1f63d1;
+}
